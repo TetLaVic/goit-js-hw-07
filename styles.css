@@ -1,0 +1,32 @@
+.js-image-styles {
+  display: flex;
+  flex-direction: column;
+}
+
+ul img {
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+#boxes {
+  display: flex;
+}
+
+.js-new-box {
+  position: relative;
+  top: 0;
+  left: 0;
+}
