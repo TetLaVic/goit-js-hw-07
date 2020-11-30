@@ -26,10 +26,12 @@ function createBox(size) {
 }
 
 function createBoxes() {
+  let createdBoxes = [];
   for (let i = 0; i < numberOfBoxes; i++) {
     const size = 30 + i * 10;
-    divBoxesRef.appendChild(createBox(size));
+    createdBoxes.push(createBox(size));
   }
+  divBoxesRef.append(...createdBoxes);
 }
 
 function destroyBoxes() {
